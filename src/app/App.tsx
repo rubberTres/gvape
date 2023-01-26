@@ -28,8 +28,8 @@ function App() {
 			<header className="h-14 shadow-md flex items-center pl-5 text-4xl">
 				GVAPE
 			</header>
-			<div className="grid grid-cols-5 gap-10 place-items-center p-5">
-				{ tastes.map(taste => <Card taste={ taste } selectedCardId={ selectedCardId } setSelectedCardId={ setSelectedCardId }/>) }
+			<div className="grid gap-10 place-items-center p-5 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+				{ tastes.map(taste => <Card key={ taste.id } taste={ taste } selectedCardId={ selectedCardId } setSelectedCardId={ setSelectedCardId }/>) }
 			</div>
 		</main>
 	);
