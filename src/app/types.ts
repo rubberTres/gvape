@@ -3,4 +3,5 @@ export type Taste = {
 	name: string
 	imageURL: string
 	description: string
+	count?: number
 }
