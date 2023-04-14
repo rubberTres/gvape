@@ -46,7 +46,7 @@ function Card(props: Props) {
 								:
 								<span className="flex gap-1 items-end">
 									<span>Ilość:</span>
-									<span className="text-sm mb-0.5">Brak danych</span>
+									<span className="text-sm mb-0.5">1</span>
 								</span>
 						}
 					</span>
