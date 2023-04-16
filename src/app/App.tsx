@@ -29,7 +29,19 @@ function App() {
 				GVAPE
 			</header>
 			<div className="grid gap-10 place-items-center p-5 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-				{ tastes.map(taste => <Card key={ taste.id } taste={ taste } selectedCardId={ selectedCardId } setSelectedCardId={ setSelectedCardId }/>) }
+				{
+					tastes.map(taste =>
+						taste.count !== 0
+							&&
+							<Card
+								key={ taste.id }
+								taste={ taste }
+								selectedCardId={ selectedCardId }
+								setSelectedCardId={ setSelectedCardId }
+
+							/>
+					)
+				}
 			</div>
 		</main>
 	);
