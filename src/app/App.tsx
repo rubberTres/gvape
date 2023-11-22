@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import { Taste } from "app/types";
 import { db } from "firebase.config";
 import { collection, getDocs } from "@firebase/firestore";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-RCKC26CWB5");
+ReactGA.send(window.location.pathname);
 
 function App() {
 
